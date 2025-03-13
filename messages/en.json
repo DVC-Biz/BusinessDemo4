@@ -1,35 +1,78 @@
 {
   "nav": {
     "home": "Home",
-    "services": "Services",
+    "features": "Features",
+    "showcase": "Showcase",
     "testimonials": "Testimonials",
     "pricing": "Pricing",
     "contact": "Contact",
-    "cta": "Get Started"
+    "button": "Get Started"
+  },
+  "modeToggle": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
   },
   "hero": {
-    "title": "Elevate Your Business with Our Premium Solutions",
-    "subtitle": "We help businesses of all sizes build, scale, and succeed in today's competitive market with cutting-edge technology and proven strategies.",
+    "introducing": "Introducing",
+    "title": "Transform Your Business with",
+    "title2": "Solutions",
+    "subtitle": "Elevate your business with our cutting-edge platform that combines AI-powered insights, seamless integrations, and intuitive tools designed for the modern enterprise.",
     "primaryCta": "Get Started",
-    "secondaryCta": "Learn More"
+    "secondaryCta": "Watch Demo"
   },
-  "services": {
-    "title": "Our Services",
-    "subtitle": "We offer a comprehensive suite of services designed to help your business grow and thrive.",
-    "items": [
-      {
-        "title": "Strategic Consulting",
-        "description": "Expert guidance to help you navigate complex business challenges and identify new opportunities for growth."
-      },
-      {
-        "title": "Digital Transformation",
-        "description": "Modernize your business with cutting-edge technology solutions tailored to your specific needs."
-      },
-      {
-        "title": "Performance Analytics",
-        "description": "Gain valuable insights into your business performance with our advanced analytics solutions."
-      }
-    ]
+  "clients": {
+    "title": "Trusted by industry-leading companies worldwide"
+  },
+  "features": {
+    "features": "Features",
+    "title": "Everything you need to succeed",
+    "subtitle": "Our comprehensive suite of features is designed to help your business thrive in today's competitive landscape.",
+    "tab1": "Core Features",
+    "tab2": "Analytics",
+    "tab3": "Automation",
+    "tab4": "Integration",
+
+    "sec1feat1Title": "Lightning Fast Performance",
+    "sec1feat1Desc": "Experience unparalleled speed and efficiency with our optimized platform architecture.",
+    "sec1feat2Title": "Enterprise-Grade Security",
+    "sec1feat2Desc": "Rest easy with our robust security measures, including end-to-end encryption and compliance controls.",
+    "sec1feat3Title": "Scalable Architecture",
+    "sec1feat3Desc": "Our platform grows with your business, handling increased loads without performance degradation.",
+
+    "sec2feat1Title": "Advanced Analytics",
+    "sec2feat1Desc": "Gain deep insights with our comprehensive analytics suite featuring customizable dashboards.",
+    "sec2feat2Title": "Predictive Insights",
+    "sec2feat2Desc": "Leverage AI-powered predictions to anticipate market trends and customer behavior.",
+    "sec2feat3Title": "Intelligent Recommendations",
+    "sec2feat3Desc": "Receive data-driven suggestions to optimize your business operations and strategy.",
+
+    "sec3feat1Title": "Workflow Automation",
+    "sec3feat1Desc": "Streamline processes with customizable automation workflows that save time and reduce errors.",
+    "sec3feat2Title": "Smart Scheduling",
+    "sec3feat2Desc": "Automate appointment booking and task scheduling with intelligent calendar management.",
+    "sec3feat3Title": "AI-Powered Assistance",
+    "sec3feat3Desc": "Let our AI assistants handle routine tasks and provide intelligent support when you need it.",
+
+    "sec4feat1Title": "Seamless Connectivity",
+    "sec4feat1Desc": "Connect with hundreds of popular services and platforms through our extensive API ecosystem.",
+    "sec4feat2Title": "Cross-Platform Compatibility",
+    "sec4feat2Desc": "Access your data and tools from any device with our responsive, cross-platform design.",
+    "sec4feat3Title": "Collaborative Workspace",
+    "sec4feat3Desc": "Foster teamwork with real-time collaboration tools and shared workspaces for your entire team."
+  },
+  "showcase": {
+    "showcase": "Why Choose Quantum?",
+    "title": "Transform your workflow with our intuitive platform",
+    "subtitle": "Our platform is designed to help you work smarter, not harder. With intuitive tools and powerful features, you can focus on what matters most - growing your business.",
+    "benefit1": "Increase productivity by up to 40%",
+    "benefit2": "Reduce operational costs by 25%",
+    "benefit3": "Improve customer satisfaction scores",
+    "benefit4": "Make data-driven decisions",
+    "benefit5": "Streamline your business processes",
+    "learnMore": "Learn More",
+    "imageDesc1": "Revenue Growth",
+    "imageDesc2": "User Satisfaction"
   },
   "testimonials": {
     "title": "What Our Clients Say",

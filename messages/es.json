@@ -1,36 +1,78 @@
 {
   "nav": {
     "home": "Inicio",
-    "services": "Servicios",
+    "features": "Características",
+    "showcase": "Ejemplos",
     "testimonials": "Testimonios",
     "pricing": "Precios",
     "contact": "Contacto",
-    "cta": "Empezar"
+    "button": "Empezar"
+  },
+  "modeToggle": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
   },
   "hero": {
-    "title": "Eleve su negocio con nuestras soluciones premium",
-
-    "subtitle": "Ayudamos a empresas de todos los tamaños a construir, escalar y tener éxito en el competitivo mercado actual con tecnología de vanguardia y estrategias probadas.",
+    "introducing": "Presentando",
+    "title": "Transforme su negocio con",
+    "title2": "",
+    "subtitle": "Eleve su negocio con nuestra plataforma de vanguardia que combina información impulsada por IA, integraciones perfectas y herramientas intuitivas diseñadas para la empresa moderna.",
     "primaryCta": "Empezar",
-    "secondaryCta": "Aprender más"
+    "secondaryCta": "Ver Demo"
   },
-  "services": {
-    "title": "Nuestros Servicios",
-    "subtitle": "Ofrecemos un conjunto completo de servicios diseñados para ayudar a su negocio a crecer y prosperar.",
-    "items": [
-      {
-        "title": "Consultoría Estratégica",
-        "description": "Orientación experta para ayudarle a navegar desafíos empresariales complejos e identificar nuevas oportunidades de crecimiento."
-      },
-      {
-        "title": "Transformación Digital",
-        "description": "Modernice su negocio con soluciones tecnológicas de vanguardia adaptadas a sus necesidades específicas."
-      },
-      {
-        "title": "Análisis de Rendimiento",
-        "description": "Obtenga valiosos conocimientos sobre el rendimiento de su negocio con nuestras avanzadas soluciones de análisis."
-      }
-    ]
+  "clients": {
+    "title": "Confiado por empresas líderes en la industria en todo el mundo"
+  },
+  "features": {
+    "features": "Características",
+    "title": "Todo lo que necesita para tener éxito",
+    "subtitle": "Nuestra completa suite de características está diseñada para ayudar a su negocio a prosperar en el competitivo panorama actual.",
+    "tab1": "Características principales",
+    "tab2": "Analítica",
+    "tab3": "Automatización",
+    "tab4": "Integración",
+
+    "sec1feat1Title": "Rendimiento ultrarrápido",
+    "sec1feat1Desc": "Experimente una velocidad y eficiencia incomparables con nuestra arquitectura de plataforma optimizada.",
+    "sec1feat2Title": "Seguridad de grado empresarial",
+    "sec1feat2Desc": "Descanse tranquilo con nuestras sólidas medidas de seguridad, incluido el cifrado de extremo a extremo y los controles de cumplimiento.",
+    "sec1feat3Title": "Arquitectura escalable",
+    "sec1feat3Desc": "Nuestra plataforma crece con su negocio, manejando cargas incrementadas sin degradación del rendimiento.",
+
+    "sec2feat1Title": "Analítica avanzada",
+    "sec2feat1Desc": "Obtenga información profunda con nuestra completa suite de analítica que presenta paneles personalizables.",
+    "sec2feat2Title": "Perspectivas predictivas",
+    "sec2feat2Desc": "Aproveche las predicciones impulsadas por IA para anticipar tendencias del mercado y comportamiento del cliente.",
+    "sec2feat3Title": "Recomendaciones inteligentes",
+    "sec2feat3Desc": "Reciba sugerencias basadas en datos para optimizar las operaciones y la estrategia de su negocio.",
+
+    "sec3feat1Title": "Automatización de flujos de trabajo",
+    "sec3feat1Desc": "Optimice sus procesos comerciales y aumente la eficiencia con nuestras herramientas de automatización de flujos de trabajo.",
+    "sec3feat2Title": "Programación de tareas",
+    "sec3feat2Desc": "Automatice tareas rutinarias y programe flujos de trabajo para ahorrar tiempo y reducir el esfuerzo manual.",
+    "sec3feat3Title": "Asistencia impulsada por IA",
+    "sec3feat3Desc": "Permita que nuestros asistentes de IA manejen tareas rutinarias y brinden soporte inteligente cuando lo necesite.",
+
+    "sec4feat1Title": "Conectividad perfecta",
+    "sec4feat1Desc": "Conéctese con cientos de servicios y plataformas populares a través de nuestro extenso ecosistema de API.",
+    "sec4feat2Title": "Compatibilidad multiplataforma",
+    "sec4feat2Desc": "Acceda a sus datos y herramientas desde cualquier dispositivo con nuestro diseño receptivo y multiplataforma.",
+    "sec4feat3Title": "Espacio de trabajo colaborativo",
+    "sec4feat3Desc": "Fomente el trabajo en equipo con herramientas de colaboración en tiempo real y espacios de trabajo compartidos para todo su equipo."
+  },
+  "showcase": {
+    "showcase": "¿Por qué escoger Quantum?",
+    "title": "Transforme su flujo de trabajo con nuestra plataforma intuitiva",
+    "subtitle": "Nuestra plataforma está diseñada para ayudarte a trabajar de manera más inteligente, no más difícil. Con herramientas intuitivas y funciones poderosas, puedes centrarte en lo que más importa: hacer crecer tu negocio.",
+    "benefit1": "Aumenta la productividad hasta en un 40%",
+    "benefit2": "Reduce los costos operativos en un 25%",
+    "benefit3": "Mejora los puntajes de satisfacción del cliente",
+    "benefit4": "Toma decisiones basadas en datos",
+    "benefit5": "Optimiza tus procesos comerciales",
+    "learnMore": "Conoce más",
+    "imageDesc1": "Crecimiento de ingresos",
+    "imageDesc2": "Satisfacción de usuario"
   },
   "testimonials": {
     "title": "Lo que dicen nuestros clientes",
