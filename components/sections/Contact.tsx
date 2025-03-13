@@ -14,11 +14,10 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { Mail, MapPin, Phone, CheckCircle, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Contact() {
-  const t = useTranslations("contact");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -57,7 +56,7 @@ export default function Contact() {
         message: "",
       });
     } catch (err) {
-      setError(t("errorMessage"));
+      setError("Something went wrong. Please try again.");
       console.error("Error submitting form:", err);
     } finally {
       setIsSubmitting(false);
@@ -65,140 +64,218 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
+    <section
+      id="contact"
+      className="w-full py-20 md:py-28 lg:py-36 overflow-hidden relative"
+    >
+      {/* Background decorations */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute top-1/4 right-0 w-[30%] h-[30%] rounded-full bg-primary/5 blur-[100px]"></div>
+        <div className="absolute bottom-1/4 left-0 w-[30%] h-[30%] rounded-full bg-violet-500/5 blur-[100px]"></div>
+      </div>
+
       <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-              {t("title")}
-            </h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              {t("subtitle")}
-            </p>
+        <motion.div
+          className="flex flex-col items-center text-center space-y-4 mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary">
+            <span className="relative flex h-2 w-2 rounded-full bg-primary"></span>
+            <span>Contact Us</span>
           </div>
-        </div>
-        <div className="mx-auto grid max-w-6xl gap-6 py-12 lg:grid-cols-2">
-          <Card>
-            <CardHeader>
-              <CardTitle>{t("formTitle")}</CardTitle>
-              <CardDescription>{t("formSubtitle")}</CardDescription>
-            </CardHeader>
-            <CardContent>
-              {isSuccess ? (
-                <div className="flex flex-col items-center justify-center space-y-4 py-12">
-                  <div className="rounded-full bg-primary/10 p-3">
-                    <Mail className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold">{t("successTitle")}</h3>
-                  <p className="text-center text-muted-foreground">
-                    {t("successMessage")}
-                  </p>
-                  <Button onClick={() => setIsSuccess(false)}>
-                    {t("sendAnother")}
-                  </Button>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="grid gap-4">
-                  <div className="grid gap-2">
-                    <Label htmlFor="name">{t("nameLabel")}</Label>
-                    <Input
-                      id="name"
-                      name="name"
-                      placeholder={t("namePlaceholder")}
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="grid gap-2">
-                    <Label htmlFor="email">{t("emailLabel")}</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      placeholder={t("emailPlaceholder")}
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="grid gap-2">
-                    <Label htmlFor="subject">{t("subjectLabel")}</Label>
-                    <Input
-                      id="subject"
-                      name="subject"
-                      placeholder={t("subjectPlaceholder")}
-                      value={formData.subject}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="grid gap-2">
-                    <Label htmlFor="message">{t("messageLabel")}</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      placeholder={t("messagePlaceholder")}
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  {error && (
-                    <div className="rounded-md bg-destructive/10 p-3 text-destructive">
-                      {error}
-                    </div>
-                  )}
-                  <Button type="submit" disabled={isSubmitting}>
-                    {isSubmitting ? t("submitting") : t("submit")}
-                  </Button>
-                </form>
-              )}
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <CardTitle>{t("contactInfoTitle")}</CardTitle>
-              <CardDescription>{t("contactInfoSubtitle")}</CardDescription>
-            </CardHeader>
-            <CardContent className="grid gap-6">
+
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+            Get in touch
+          </h2>
+
+          <p className="mx-auto max-w-[700px] text-muted-foreground text-lg">
+            Have questions or ready to get started? Reach out to our team today.
+          </p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+          <motion.div
+            className="space-y-8"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold">
+                Let's discuss how we can help your business
+              </h3>
+              <p className="text-muted-foreground">
+                Our team of experts is ready to answer your questions and help
+                you find the perfect solution for your business needs.
+              </p>
+            </div>
+
+            <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <MapPin className="h-6 w-6 text-primary" />
+                <div className="rounded-full bg-primary/10 p-2">
+                  <MapPin className="h-5 w-5 text-primary" />
+                </div>
                 <div>
-                  <h3 className="font-semibold">{t("addressTitle")}</h3>
-                  <p className="text-sm text-muted-foreground">
-                    123 Business Street
+                  <h3 className="font-medium">Visit our office</h3>
+                  <p className="text-sm text-muted-foreground mt-1">
+                    123 Innovation Avenue, Suite 100
                     <br />
-                    Suite 100
-                    <br />
-                    New York, NY 10001
+                    San Francisco, CA 94107
                   </p>
                 </div>
               </div>
+
               <div className="flex items-start gap-4">
-                <Mail className="h-6 w-6 text-primary" />
+                <div className="rounded-full bg-primary/10 p-2">
+                  <Mail className="h-5 w-5 text-primary" />
+                </div>
                 <div>
-                  <h3 className="font-semibold">{t("emailTitle")}</h3>
-                  <p className="text-sm text-muted-foreground">
-                    info@businesspro.com
+                  <h3 className="font-medium">Email us</h3>
+                  <p className="text-sm text-muted-foreground mt-1">
+                    info@quantum.com
                     <br />
-                    support@businesspro.com
+                    support@quantum.com
                   </p>
                 </div>
               </div>
+
               <div className="flex items-start gap-4">
-                <Phone className="h-6 w-6 text-primary" />
+                <div className="rounded-full bg-primary/10 p-2">
+                  <Phone className="h-5 w-5 text-primary" />
+                </div>
                 <div>
-                  <h3 className="font-semibold">{t("phoneTitle")}</h3>
-                  <p className="text-sm text-muted-foreground">
+                  <h3 className="font-medium">Call us</h3>
+                  <p className="text-sm text-muted-foreground mt-1">
                     +1 (555) 123-4567
                     <br />
-                    +1 (555) 987-6543
+                    Mon-Fri from 9am to 6pm EST
                   </p>
                 </div>
               </div>
-            </CardContent>
-          </Card>
+            </div>
+
+            <div className="relative h-[300px] rounded-xl overflow-hidden border border-primary/20">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0952890486577!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1625687563!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Office Location"
+              ></iframe>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <Card className="border border-primary/20 bg-background/50 backdrop-blur-sm shadow-xl">
+              <CardHeader>
+                <CardTitle>Send us a message</CardTitle>
+                <CardDescription>
+                  We'll get back to you as soon as possible.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                {isSuccess ? (
+                  <motion.div
+                    className="flex flex-col items-center justify-center space-y-4 py-12"
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <div className="rounded-full bg-primary/10 p-3">
+                      <CheckCircle className="h-8 w-8 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-semibold">Message Sent!</h3>
+                    <p className="text-center text-muted-foreground">
+                      Thank you for reaching out. We'll get back to you shortly.
+                    </p>
+                    <Button
+                      onClick={() => setIsSuccess(false)}
+                      className="mt-4 rounded-full bg-gradient-to-r from-primary to-violet-500 hover:from-primary/90 hover:to-violet-500/90 text-white shadow-md shadow-primary/20"
+                    >
+                      Send Another Message
+                    </Button>
+                  </motion.div>
+                ) : (
+                  <form onSubmit={handleSubmit} className="grid gap-4">
+                    <div className="grid gap-2">
+                      <Label htmlFor="name">Name</Label>
+                      <Input
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        required
+                        className="rounded-md border-primary/20 focus:border-primary focus:ring-primary"
+                      />
+                    </div>
+                    <div className="grid gap-2">
+                      <Label htmlFor="email">Email</Label>
+                      <Input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="Enter your email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        className="rounded-md border-primary/20 focus:border-primary focus:ring-primary"
+                      />
+                    </div>
+                    <div className="grid gap-2">
+                      <Label htmlFor="subject">Subject</Label>
+                      <Input
+                        id="subject"
+                        name="subject"
+                        placeholder="What's this about?"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        required
+                        className="rounded-md border-primary/20 focus:border-primary focus:ring-primary"
+                      />
+                    </div>
+                    <div className="grid gap-2">
+                      <Label htmlFor="message">Message</Label>
+                      <Textarea
+                        id="message"
+                        name="message"
+                        placeholder="Tell us what you need help with..."
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
+                        className="min-h-[120px] rounded-md border-primary/20 focus:border-primary focus:ring-primary"
+                      />
+                    </div>
+                    {error && (
+                      <div className="rounded-md bg-destructive/10 p-3 text-destructive">
+                        {error}
+                      </div>
+                    )}
+                    <Button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="rounded-full mt-2 bg-gradient-to-r from-primary to-violet-500 hover:from-primary/90 hover:to-violet-500/90 text-white shadow-md shadow-primary/20 group"
+                    >
+                      {isSubmitting ? "Sending..." : "Send Message"}
+                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </Button>
+                  </form>
+                )}
+              </CardContent>
+            </Card>
+          </motion.div>
         </div>
       </div>
     </section>
