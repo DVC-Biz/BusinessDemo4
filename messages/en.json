@@ -1,0 +1,134 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "testimonials": "Testimonials",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "cta": "Get Started"
+  },
+  "hero": {
+    "title": "Elevate Your Business with Our Premium Solutions",
+    "subtitle": "We help businesses of all sizes build, scale, and succeed in today's competitive market with cutting-edge technology and proven strategies.",
+    "primaryCta": "Get Started",
+    "secondaryCta": "Learn More"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We offer a comprehensive suite of services designed to help your business grow and thrive.",
+    "items": [
+      {
+        "title": "Strategic Consulting",
+        "description": "Expert guidance to help you navigate complex business challenges and identify new opportunities for growth."
+      },
+      {
+        "title": "Digital Transformation",
+        "description": "Modernize your business with cutting-edge technology solutions tailored to your specific needs."
+      },
+      {
+        "title": "Performance Analytics",
+        "description": "Gain valuable insights into your business performance with our advanced analytics solutions."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Don't just take our word for it. Here's what our clients have to say about working with us.",
+    "items": [
+      {
+        "quote": "Working with BusinessPro has been a game-changer for our company. Their strategic insights helped us double our revenue in just 12 months.",
+        "author": "Sarah Johnson",
+        "role": "CEO, TechStart Inc."
+      },
+      {
+        "quote": "The team at BusinessPro truly understands our industry and has provided invaluable guidance as we've scaled our operations globally.",
+        "author": "Michael Chen",
+        "role": "COO, Global Solutions"
+      },
+      {
+        "quote": "I've worked with many consultants over the years, but none have delivered the level of results and ROI that BusinessPro has.",
+        "author": "Jessica Williams",
+        "role": "Marketing Director, Retail Giant"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Choose the plan that's right for your business. All plans include our core features.",
+    "popularLabel": "Most Popular",
+    "monthly": "month",
+    "plans": [
+      {
+        "name": "Starter",
+        "description": "Perfect for small businesses just getting started.",
+        "price": "$99",
+        "feature1": "Basic business analysis",
+        "feature2": "5 custom reports",
+        "feature3": "Email support",
+        "feature4": "1 user license",
+        "cta": "Get Started"
+      },
+      {
+        "name": "Professional",
+        "description": "Ideal for growing businesses with specific needs.",
+        "price": "$299",
+        "feature1": "Advanced business analysis",
+        "feature2": "Unlimited custom reports",
+        "feature3": "Priority support",
+        "feature4": "5 user licenses",
+        "feature5": "API access",
+        "cta": "Start Free Trial"
+      },
+      {
+        "name": "Enterprise",
+        "description": "For large organizations with complex requirements.",
+        "price": "$999",
+        "feature1": "Comprehensive business analysis",
+        "feature2": "Unlimited everything",
+        "feature3": "24/7 dedicated support",
+        "feature4": "Unlimited user licenses",
+        "feature5": "Custom integrations",
+        "feature6": "Dedicated account manager",
+        "cta": "Contact Sales"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have questions or ready to get started? Reach out to our team today.",
+    "formTitle": "Send us a message",
+    "formSubtitle": "We'll get back to you as soon as possible.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Enter your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "What's this about?",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell us what you need help with...",
+    "submit": "Send Message",
+    "submitting": "Sending...",
+    "errorMessage": "Something went wrong. Please try again.",
+    "successTitle": "Message Sent!",
+    "successMessage": "Thank you for reaching out. We'll get back to you shortly.",
+    "sendAnother": "Send Another Message",
+    "contactInfoTitle": "Contact Information",
+    "contactInfoSubtitle": "You can also reach us using the information below.",
+    "addressTitle": "Address",
+    "emailTitle": "Email",
+    "phoneTitle": "Phone"
+  },
+  "footer": {
+    "tagline": "Helping businesses grow and succeed since 2010.",
+    "company": "Company",
+    "about": "About Us",
+    "careers": "Careers",
+    "blog": "Blog",
+    "legal": "Legal",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Policy",
+    "connect": "Connect",
+    "rights": "All rights reserved."
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "testimonials": "Testimonios",
+    "pricing": "Precios",
+    "contact": "Contacto",
+    "cta": "Empezar"
+  },
+  "hero": {
+    "title": "Eleve su negocio con nuestras soluciones premium",
+
+    "subtitle": "Ayudamos a empresas de todos los tamaños a construir, escalar y tener éxito en el competitivo mercado actual con tecnología de vanguardia y estrategias probadas.",
+    "primaryCta": "Empezar",
+    "secondaryCta": "Aprender más"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Ofrecemos un conjunto completo de servicios diseñados para ayudar a su negocio a crecer y prosperar.",
+    "items": [
+      {
+        "title": "Consultoría Estratégica",
+        "description": "Orientación experta para ayudarle a navegar desafíos empresariales complejos e identificar nuevas oportunidades de crecimiento."
+      },
+      {
+        "title": "Transformación Digital",
+        "description": "Modernice su negocio con soluciones tecnológicas de vanguardia adaptadas a sus necesidades específicas."
+      },
+      {
+        "title": "Análisis de Rendimiento",
+        "description": "Obtenga valiosos conocimientos sobre el rendimiento de su negocio con nuestras avanzadas soluciones de análisis."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Lo que dicen nuestros clientes",
+    "subtitle": "No se limite a tomar nuestra palabra. Esto es lo que nuestros clientes tienen que decir sobre trabajar con nosotros.",
+    "items": [
+      {
+        "quote": "Trabajar con BusinessPro ha sido un cambio radical para nuestra empresa. Sus ideas estratégicas nos ayudaron a duplicar nuestros ingresos en solo 12 meses.",
+        "author": "Sarah Johnson",
+        "role": "CEO, TechStart Inc."
+      },
+      {
+        "quote": "El equipo de BusinessPro realmente comprende nuestra industria y ha proporcionado una orientación invaluable a medida que hemos escalado nuestras operaciones a nivel global.",
+        "author": "Michael Chen",
+        "role": "COO, Global Solutions"
+      },
+      {
+        "quote": "He trabajado con muchos consultores a lo largo de los años, pero ninguno ha ofrecido el nivel de resultados y ROI que BusinessPro ha proporcionado.",
+        "author": "Jessica Williams",
+        "role": "Directora de Marketing, Retail Giant"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Precios simples y transparentes",
+    "subtitle": "Elija el plan que sea adecuado para su negocio. Todos los planes incluyen nuestras características básicas.",
+    "popularLabel": "Más Popular",
+    "monthly": "mes",
+    "plans": [
+      {
+        "name": "Starter",
+        "description": "Perfecto para pequeñas empresas que recién comienzan.",
+        "price": "$99",
+        "feature1": "Análisis empresarial básico",
+        "feature2": "5 informes personalizados",
+        "feature3": "Soporte por correo electrónico",
+        "feature4": "1 licencia de usuario",
+        "cta": "Empezar"
+      },
+      {
+        "name": "Professional",
+        "description": "Ideal para negocios en crecimiento con necesidades específicas.",
+        "price": "$299",
+        "feature1": "Análisis empresarial avanzado",
+        "feature2": "Informes personalizados ilimitados",
+        "feature3": "Soporte prioritario",
+        "feature4": "5 licencias de usuario",
+        "feature5": "Acceso a API",
+        "cta": "Prueba gratuita"
+      },
+      {
+        "name": "Enterprise",
+        "description": "Para grandes organizaciones con requisitos complejos.",
+        "price": "$999",
+        "feature1": "Análisis empresarial integral",
+        "feature2": "Todo ilimitado",
+        "feature3": "Soporte dedicado 24/7",
+        "feature4": "Licencias de usuario ilimitadas",
+        "feature5": "Integraciones personalizadas",
+        "feature6": "Gerente de cuenta dedicado",
+        "cta": "Contactar ventas"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "subtitle": "¿Tiene preguntas o está listo para comenzar? Comuníquese con nuestro equipo hoy mismo.",
+    "formTitle": "Envíenos un mensaje",
+    "formSubtitle": "Nos pondremos en contacto con usted lo antes posible.",
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Ingrese su nombre",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "Ingrese su correo electrónico",
+    "subjectLabel": "Asunto",
+    "subjectPlaceholder": "¿De qué se trata esto?",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Cuéntenos con qué necesita ayuda...",
+    "submit": "Enviar mensaje",
+    "submitting": "Enviando...",
+    "errorMessage": "Algo salió mal. Por favor, inténtelo de nuevo.",
+    "successTitle": "Mensaje Enviado!",
+    "successMessage": "Gracias por contactarnos. Nos pondremos en contacto con usted en breve.",
+    "sendAnother": "Enviar otro mensaje",
+    "contactInfoTitle": "Información de contacto",
+    "contactInfoSubtitle": "También puede comunicarse con nosotros utilizando la información a continuación.",
+    "addressTitle": "Dirección",
+    "emailTitle": "Correo electrónico",
+    "phoneTitle": "Teléfono"
+  },
+  "footer": {
+    "tagline": "Ayudando a las empresas a crecer y tener éxito desde 2010.",
+    "company": "Empresa",
+    "about": "Acerca de nosotros",
+    "careers": "Carreras",
+    "blog": "Blog",
+    "legal": "Legal",
+    "terms": "Términos de servicio",
+    "privacy": "Política de privacidad",
+    "cookies": "Política de cookies",
+    "connect": "Conectar",
+    "rights": "Todos los derechos reservados."
+  }
+}
