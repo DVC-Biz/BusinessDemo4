@@ -3,8 +3,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function Cta() {
+  const t = useTranslations("cta");
+
   return (
     <section className="w-full py-20 md:py-28 lg:py-36 overflow-hidden relative">
       {/* Background decorations */}
@@ -27,7 +30,7 @@ export default function Cta() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Ready to transform your business?
+            {t("title")}
           </motion.h2>
 
           <motion.p
@@ -37,9 +40,7 @@ export default function Cta() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Join thousands of businesses that are already using Quantum to
-            streamline their operations, increase productivity, and drive
-            growth.
+            {t("subtitle")}
           </motion.p>
 
           <motion.div
@@ -53,7 +54,7 @@ export default function Cta() {
               size="lg"
               className="rounded-full bg-gradient-to-r from-primary to-violet-500 hover:from-primary/90 hover:to-violet-500/90 text-white shadow-lg shadow-primary/20 group"
             >
-              Get Started
+              {t("primaryCta")}
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button
@@ -61,7 +62,7 @@ export default function Cta() {
               variant="outline"
               className="rounded-full border-primary/20 bg-background/50 backdrop-blur-sm hover:bg-primary/5 hover:text-primary"
             >
-              Schedule a Demo
+              {t("secondaryCta")}
             </Button>
           </motion.div>
 
@@ -72,7 +73,7 @@ export default function Cta() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            No credit card required. 14-day free trial. Cancel anytime.
+            {t("disclaimer")}
           </motion.p>
         </motion.div>
       </div>

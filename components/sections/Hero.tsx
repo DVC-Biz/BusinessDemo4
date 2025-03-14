@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { useTranslations } from "next-intl";
 
 export default function Hero() {
@@ -114,6 +114,7 @@ export default function Hero() {
       </div>
 
       <Dialog open={videoOpen} onOpenChange={setVideoOpen}>
+        <DialogTitle />
         <DialogContent className="max-w-4xl p-0 overflow-hidden">
           <div className="aspect-video">
             <iframe

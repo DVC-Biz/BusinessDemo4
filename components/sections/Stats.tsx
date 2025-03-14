@@ -2,13 +2,15 @@
 
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
+import { useTranslations } from "next-intl";
 
 export default function Stats() {
+  const t = useTranslations("stats");
   const stats = [
-    { value: 500, suffix: "+", label: "Enterprise Clients" },
-    { value: 99.9, suffix: "%", label: "Uptime Guarantee" },
-    { value: 10, suffix: "M+", label: "Users Worldwide" },
-    { value: 24, suffix: "/7", label: "Support Available" },
+    { value: 500, suffix: "+", label: t("firstStat") },
+    { value: 99.9, suffix: "%", label: t("secondStat") },
+    { value: 10, suffix: "M+", label: t("thirdStat") },
+    { value: 24, suffix: "/7", label: t("fourthStat") },
   ];
 
   return (

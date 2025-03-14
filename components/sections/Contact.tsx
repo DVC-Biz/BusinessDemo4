@@ -16,8 +16,11 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone, CheckCircle, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function Contact() {
+  const t = useTranslations("contact");
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -84,15 +87,15 @@ export default function Contact() {
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary">
             <span className="relative flex h-2 w-2 rounded-full bg-primary"></span>
-            <span>Contact Us</span>
+            <span>{t("contact")}</span>
           </div>
 
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            Get in touch
+            {t("title")}
           </h2>
 
           <p className="mx-auto max-w-[700px] text-muted-foreground text-lg">
-            Have questions or ready to get started? Reach out to our team today.
+            {t("subtitle")}
           </p>
         </motion.div>
 
@@ -105,13 +108,8 @@ export default function Contact() {
             transition={{ duration: 0.5 }}
           >
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold">
-                Let's discuss how we can help your business
-              </h3>
-              <p className="text-muted-foreground">
-                Our team of experts is ready to answer your questions and help
-                you find the perfect solution for your business needs.
-              </p>
+              <h3 className="text-2xl font-bold">{t("formTitle")}</h3>
+              <p className="text-muted-foreground">{t("formSubtitle")}</p>
             </div>
 
             <div className="space-y-6">
@@ -120,7 +118,7 @@ export default function Contact() {
                   <MapPin className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Visit our office</h3>
+                  <h3 className="font-medium">{t("visit")}</h3>
                   <p className="text-sm text-muted-foreground mt-1">
                     123 Innovation Avenue, Suite 100
                     <br />
@@ -134,7 +132,7 @@ export default function Contact() {
                   <Mail className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Email us</h3>
+                  <h3 className="font-medium">{t("email")}</h3>
                   <p className="text-sm text-muted-foreground mt-1">
                     info@quantum.com
                     <br />
@@ -148,7 +146,7 @@ export default function Contact() {
                   <Phone className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Call us</h3>
+                  <h3 className="font-medium">{t("call")}</h3>
                   <p className="text-sm text-muted-foreground mt-1">
                     +1 (555) 123-4567
                     <br />
@@ -180,10 +178,8 @@ export default function Contact() {
           >
             <Card className="border border-primary/20 bg-background/50 backdrop-blur-sm shadow-xl">
               <CardHeader>
-                <CardTitle>Send us a message</CardTitle>
-                <CardDescription>
-                  We'll get back to you as soon as possible.
-                </CardDescription>
+                <CardTitle>{t("sendMessageTitle")}</CardTitle>
+                <CardDescription>{t("sendMessageSubtitle")}</CardDescription>
               </CardHeader>
               <CardContent>
                 {isSuccess ? (
@@ -196,25 +192,27 @@ export default function Contact() {
                     <div className="rounded-full bg-primary/10 p-3">
                       <CheckCircle className="h-8 w-8 text-primary" />
                     </div>
-                    <h3 className="text-xl font-semibold">Message Sent!</h3>
+                    <h3 className="text-xl font-semibold">
+                      {t("successTitle")}
+                    </h3>
                     <p className="text-center text-muted-foreground">
-                      Thank you for reaching out. We'll get back to you shortly.
+                      {t("successMessage")}
                     </p>
                     <Button
                       onClick={() => setIsSuccess(false)}
                       className="mt-4 rounded-full bg-gradient-to-r from-primary to-violet-500 hover:from-primary/90 hover:to-violet-500/90 text-white shadow-md shadow-primary/20"
                     >
-                      Send Another Message
+                      {t("sendAnother")}
                     </Button>
                   </motion.div>
                 ) : (
                   <form onSubmit={handleSubmit} className="grid gap-4">
                     <div className="grid gap-2">
-                      <Label htmlFor="name">Name</Label>
+                      <Label htmlFor="name">{t("nameLabel")}</Label>
                       <Input
                         id="name"
                         name="name"
-                        placeholder="Enter your name"
+                        placeholder={t("namePlaceholder")}
                         value={formData.name}
                         onChange={handleChange}
                         required
@@ -222,12 +220,12 @@ export default function Contact() {
                       />
                     </div>
                     <div className="grid gap-2">
-                      <Label htmlFor="email">Email</Label>
+                      <Label htmlFor="email">{t("emailLabel")}</Label>
                       <Input
                         id="email"
                         name="email"
                         type="email"
-                        placeholder="Enter your email"
+                        placeholder={t("emailPlaceholder")}
                         value={formData.email}
                         onChange={handleChange}
                         required
@@ -235,11 +233,11 @@ export default function Contact() {
                       />
                     </div>
                     <div className="grid gap-2">
-                      <Label htmlFor="subject">Subject</Label>
+                      <Label htmlFor="subject">{t("subjectLabel")}</Label>
                       <Input
                         id="subject"
                         name="subject"
-                        placeholder="What's this about?"
+                        placeholder={t("subjectPlaceholder")}
                         value={formData.subject}
                         onChange={handleChange}
                         required
@@ -247,11 +245,11 @@ export default function Contact() {
                       />
                     </div>
                     <div className="grid gap-2">
-                      <Label htmlFor="message">Message</Label>
+                      <Label htmlFor="message">{t("messageLabel")}</Label>
                       <Textarea
                         id="message"
                         name="message"
-                        placeholder="Tell us what you need help with..."
+                        placeholder={t("messagePlaceholder")}
                         value={formData.message}
                         onChange={handleChange}
                         required
@@ -268,7 +266,7 @@ export default function Contact() {
                       disabled={isSubmitting}
                       className="rounded-full mt-2 bg-gradient-to-r from-primary to-violet-500 hover:from-primary/90 hover:to-violet-500/90 text-white shadow-md shadow-primary/20 group"
                     >
-                      {isSubmitting ? "Sending..." : "Send Message"}
+                      {isSubmitting ? t("submitting") : t("submit")}
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Button>
                   </form>

@@ -12,8 +12,10 @@ import {
   Mail,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("footer");
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
@@ -57,9 +59,7 @@ export default function Footer() {
               variants={fadeInUp}
               className="text-muted-foreground max-w-md"
             >
-              Quantum helps forward-thinking businesses transform, innovate, and
-              lead in their industries. Our cutting-edge solutions drive growth
-              and create lasting competitive advantages.
+              {t("subtitle")}
             </motion.p>
 
             <motion.div variants={fadeInUp} className="flex space-x-5">
@@ -112,7 +112,7 @@ export default function Footer() {
                 variants={fadeInUp}
                 className="text-sm font-medium uppercase tracking-wider"
               >
-                Company
+                {t("company")}
               </motion.h3>
               <motion.ul variants={fadeInUp} className="space-y-4">
                 <li>
@@ -120,7 +120,7 @@ export default function Footer() {
                     href="#"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    About Us
+                    {t("about")}
                   </Link>
                 </li>
                 <li>
@@ -128,7 +128,7 @@ export default function Footer() {
                     href="#"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    Our Team
+                    {t("team")}
                   </Link>
                 </li>
                 <li>
@@ -136,7 +136,7 @@ export default function Footer() {
                     href="#"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    Careers
+                    {t("careers")}
                   </Link>
                 </li>
                 <li>
@@ -144,7 +144,7 @@ export default function Footer() {
                     href="#contact"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    Contact
+                    {t("contact")}
                   </Link>
                 </li>
               </motion.ul>
@@ -167,18 +167,18 @@ export default function Footer() {
                 variants={fadeInUp}
                 className="text-sm font-medium uppercase tracking-wider"
               >
-                Subscribe
+                {t("subscribe")}
               </motion.h3>
               <motion.div variants={fadeInUp} className="space-y-4">
                 <p className="text-sm text-muted-foreground">
-                  Stay updated with our latest news and offers.
+                  {t("subscribeDesc")}
                 </p>
                 <div className="flex max-w-sm items-center space-x-2">
                   <div className="relative flex-1">
                     <Mail className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                     <Input
                       type="email"
-                      placeholder="Enter your email"
+                      placeholder={t("labelPlaceholder")}
                       className="pl-10 pr-20 py-6 rounded-full border-muted-foreground/20"
                     />
                     <Button
@@ -203,26 +203,26 @@ export default function Footer() {
         >
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-xs text-muted-foreground">
-              &copy; {new Date().getFullYear()} Quantum. All rights reserved.
+              &copy; {new Date().getFullYear()} Quantum. {t("rights")}
             </p>
             <div className="flex space-x-6 text-xs">
               <Link
                 href="#"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                Privacy Policy
+                {t("privacy")}
               </Link>
               <Link
                 href="#"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                Terms of Service
+                {t("terms")}
               </Link>
               <Link
                 href="#"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                Cookie Policy
+                {t("cookies")}
               </Link>
             </div>
           </div>

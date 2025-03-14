@@ -14,60 +14,62 @@ import { Check } from "lucide-react";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function Pricing() {
+  const t = useTranslations("pricing");
   const [isAnnual, setIsAnnual] = useState(true);
 
   const plans = [
     {
       name: "Starter",
-      description: "Perfect for small businesses just getting started.",
+      description: t("plans.0.description"),
       monthlyPrice: "$29",
       annualPrice: "$290",
       features: [
-        "Up to 5 team members",
-        "20GB storage",
-        "Basic analytics",
-        "24/7 email support",
-        "API access",
+        t("plans.0.feature1"),
+        t("plans.0.feature2"),
+        t("plans.0.feature3"),
+        t("plans.0.feature4"),
+        t("plans.0.feature5"),
       ],
-      cta: "Get Started",
+      cta: t("plans.0.cta"),
       popular: false,
     },
     {
       name: "Professional",
-      description: "Ideal for growing businesses with specific needs.",
+      description: t("plans.1.description"),
       monthlyPrice: "$79",
       annualPrice: "$790",
       features: [
-        "Up to 20 team members",
-        "100GB storage",
-        "Advanced analytics",
-        "24/7 priority support",
-        "API access",
-        "Custom integrations",
-        "Dedicated account manager",
+        t("plans.1.feature1"),
+        t("plans.1.feature2"),
+        t("plans.1.feature3"),
+        t("plans.1.feature4"),
+        t("plans.1.feature5"),
+        t("plans.1.feature6"),
+        t("plans.1.feature7"),
       ],
-      cta: "Start Free Trial",
+      cta: t("plans.1.cta"),
       popular: true,
     },
     {
       name: "Enterprise",
-      description: "For large organizations with complex requirements.",
+      description: t("plans.2.description"),
       monthlyPrice: "$199",
       annualPrice: "$1,990",
       features: [
-        "Unlimited team members",
-        "Unlimited storage",
-        "Custom analytics",
-        "24/7 VIP support",
-        "Advanced API access",
-        "Custom integrations",
-        "Dedicated account manager",
-        "On-site training",
-        "Custom development",
+        t("plans.2.feature1"),
+        t("plans.2.feature2"),
+        t("plans.2.feature3"),
+        t("plans.2.feature4"),
+        t("plans.2.feature5"),
+        t("plans.2.feature6"),
+        t("plans.2.feature7"),
+        t("plans.2.feature8"),
+        t("plans.2.feature9"),
       ],
-      cta: "Contact Sales",
+      cta: t("plans.2.cta"),
       popular: false,
     },
   ];
@@ -92,16 +94,15 @@ export default function Pricing() {
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary">
             <span className="relative flex h-2 w-2 rounded-full bg-primary"></span>
-            <span>Pricing</span>
+            <span>{t("pricing")}</span>
           </div>
 
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            Simple, transparent pricing
+            {t("title")}
           </h2>
 
           <p className="mx-auto max-w-[700px] text-muted-foreground text-lg">
-            Choose the plan that's right for your business. All plans include a
-            14-day free trial.
+            {t("subtitle")}
           </p>
 
           <div className="flex items-center space-x-4 mt-6">
@@ -112,7 +113,7 @@ export default function Pricing() {
                   : "text-muted-foreground"
               }`}
             >
-              Monthly
+              {t("monthly")}
             </span>
             <Switch
               checked={isAnnual}
@@ -129,10 +130,10 @@ export default function Pricing() {
                     : "text-muted-foreground"
                 }`}
               >
-                Annual
+                {t("annual")}
               </Label>
               <span className="ml-2 rounded-full bg-green-100 dark:bg-green-900 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:text-green-300">
-                Save 20%
+                {t("save")} 20%
               </span>
             </div>
           </div>
@@ -156,7 +157,7 @@ export default function Pricing() {
               >
                 {plan.popular && (
                   <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-0 rounded-full bg-gradient-to-r from-primary to-violet-500 px-3 py-1 text-xs font-semibold text-white shadow-md">
-                    Most Popular
+                    {t("popularLabel")}
                   </div>
                 )}
                 <CardHeader>

@@ -7,40 +7,39 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useMobile } from "@/hooks/use-mobile";
+import { useTranslations } from "next-intl";
 
 export default function Testimonials() {
+  const t = useTranslations("testimonials");
+
   const testimonials = [
     {
-      quote:
-        "Quantum has transformed the way we operate. The platform's intuitive design and powerful features have helped us streamline our processes and grow our business exponentially.",
-      author: "Sarah Johnson",
+      quote: t("items.0.quote"),
+      author: t("items.0.author"),
       role: "CEO, TechStart Inc.",
-      avatar: "/placeholder.svg?height=100&width=100",
-      company: "/placeholder.svg?height=40&width=120",
+      avatar: "/profile1.svg",
+      company: "/company1.svg",
     },
     {
-      quote:
-        "The team at Quantum truly understands our industry and has provided invaluable guidance as we've scaled our operations globally. Their platform is a game-changer.",
-      author: "Michael Chen",
+      quote: t("items.1.quote"),
+      author: t("items.1.author"),
       role: "COO, Global Solutions",
-      avatar: "/placeholder.svg?height=100&width=100",
-      company: "/placeholder.svg?height=40&width=120",
+      avatar: "/profile2.svg",
+      company: "/company2.svg",
     },
     {
-      quote:
-        "I've worked with many service providers over the years, but none have delivered the level of results and ROI that Quantum has. Their platform is exceptional.",
-      author: "Jessica Williams",
+      quote: t("items.2.quote"),
+      author: t("items.2.author"),
       role: "Marketing Director, Retail Giant",
-      avatar: "/placeholder.svg?height=100&width=100",
-      company: "/placeholder.svg?height=40&width=120",
+      avatar: "/profile3.svg",
+      company: "/company3.svg",
     },
     {
-      quote:
-        "Implementing Quantum's solution has been the best decision we've made this year. Our productivity has increased by 40% and our customer satisfaction scores are at an all-time high.",
-      author: "David Rodriguez",
+      quote: t("items.3.quote"),
+      author: t("items.3.author"),
       role: "CTO, Innovation Labs",
-      avatar: "/placeholder.svg?height=100&width=100",
-      company: "/placeholder.svg?height=40&width=120",
+      avatar: "/profile4.svg",
+      company: "/company4.svg",
     },
   ];
 
@@ -94,16 +93,15 @@ export default function Testimonials() {
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary">
             <span className="relative flex h-2 w-2 rounded-full bg-primary"></span>
-            <span>Testimonials</span>
+            <span>{t("testimonials")}</span>
           </div>
 
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            What our clients say
+            {t("title")}
           </h2>
 
           <p className="mx-auto max-w-[700px] text-muted-foreground text-lg">
-            Don't just take our word for it. Here's what our clients have to say
-            about working with us.
+            {t("subtitle")}
           </p>
         </motion.div>
 
@@ -126,7 +124,7 @@ export default function Testimonials() {
                           <div className="flex flex-col h-full justify-between">
                             <div>
                               <Quote className="h-12 w-12 text-primary/20 mb-6" />
-                              <p className="text-xl md:text-2xl font-medium mb-8 leading-relaxed">
+                              <p className="text-center text-xl md:text-2xl font-medium mb-8 leading-relaxed">
                                 "{testimonial.quote}"
                               </p>
                             </div>
