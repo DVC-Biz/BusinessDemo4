@@ -74,104 +74,133 @@
     "imageDesc1": "Crecimiento de ingresos",
     "imageDesc2": "Satisfacción de usuario"
   },
+  "stats": {
+    "firstStat": "Clientes empresariales",
+    "secondStat": "Garantía de tiempo de actividad",
+    "thirdStat": "Usuarios en todo el mundo",
+    "fourthStat": "Soporte disponible"
+  },
   "testimonials": {
-    "title": "Lo que dicen nuestros clientes",
-    "subtitle": "No se limite a tomar nuestra palabra. Esto es lo que nuestros clientes tienen que decir sobre trabajar con nosotros.",
+    "testimonials": "Testimonios",
+    "title": "Lo que nuestros clientes dicen",
+    "subtitle": "No solo tomes nuestra palabra. Aquí tienes lo que dicen nuestros clientes sobre trabajar con nosotros.",
     "items": [
       {
-        "quote": "Trabajar con BusinessPro ha sido un cambio radical para nuestra empresa. Sus ideas estratégicas nos ayudaron a duplicar nuestros ingresos en solo 12 meses.",
+        "quote": "Quantum ha transformado la forma en que operamos. El diseño intuitivo de la plataforma y sus potentes funciones nos han ayudado a optimizar nuestros procesos y hacer crecer nuestro negocio exponencialmente.",
         "author": "Sarah Johnson",
         "role": "CEO, TechStart Inc."
       },
       {
-        "quote": "El equipo de BusinessPro realmente comprende nuestra industria y ha proporcionado una orientación invaluable a medida que hemos escalado nuestras operaciones a nivel global.",
+        "quote": "El equipo de Quantum realmente entiende nuestra industria y nos ha brindado una guía invaluable mientras escalamos nuestras operaciones a nivel global. Su plataforma es un cambio radical.",
         "author": "Michael Chen",
         "role": "COO, Global Solutions"
       },
       {
-        "quote": "He trabajado con muchos consultores a lo largo de los años, pero ninguno ha ofrecido el nivel de resultados y ROI que BusinessPro ha proporcionado.",
+        "quote": "He trabajado con muchos proveedores de servicios a lo largo de los años, pero ninguno ha entregado el nivel de resultados y retorno de inversión que Quantum ha logrado. Su plataforma es excepcional.",
         "author": "Jessica Williams",
-        "role": "Directora de Marketing, Retail Giant"
+        "role": "Marketing Director, Retail Giant"
+      },
+      {
+        "quote": "Implementar la solución de Quantum ha sido la mejor decisión que hemos tomado este año. Nuestra productividad ha aumentado un 40% y nuestros puntajes de satisfacción del cliente están en su punto más alto.",
+        "author": "David Rodriguez",
+        "role": "CTO, Innovation Labs"
       }
     ]
   },
   "pricing": {
+    "pricing": "Precios",
     "title": "Precios simples y transparentes",
-    "subtitle": "Elija el plan que sea adecuado para su negocio. Todos los planes incluyen nuestras características básicas.",
+    "subtitle": "Elije el plan que sea adecuado para tu negocio. Todos los planes incluyen una prueba gratuita de 14 días.",
+    "monthly": "Mensual",
+    "annual": "Anual",
+    "save": "Ahorra",
     "popularLabel": "Más Popular",
-    "monthly": "mes",
     "plans": [
       {
         "name": "Starter",
         "description": "Perfecto para pequeñas empresas que recién comienzan.",
-        "price": "$99",
-        "feature1": "Análisis empresarial básico",
-        "feature2": "5 informes personalizados",
-        "feature3": "Soporte por correo electrónico",
-        "feature4": "1 licencia de usuario",
+        "feature1": "Hasta 5 miembros del equipo",
+        "feature2": "20GB de almacenamiento",
+        "feature3": "Analítica básica",
+        "feature4": "Soporte 24/7 por correo electrónico",
+        "feature5": "Acceso a la API",
         "cta": "Empezar"
       },
       {
         "name": "Professional",
         "description": "Ideal para negocios en crecimiento con necesidades específicas.",
-        "price": "$299",
-        "feature1": "Análisis empresarial avanzado",
-        "feature2": "Informes personalizados ilimitados",
-        "feature3": "Soporte prioritario",
-        "feature4": "5 licencias de usuario",
-        "feature5": "Acceso a API",
-        "cta": "Prueba gratuita"
+        "feature1": "Hasta 20 miembros del equipo",
+        "feature2": "100GB de almacenamiento",
+        "feature3": "Análisis avanzados",
+        "feature4": "Soporte prioritario 24/7",
+        "feature5": "Acceso a la API",
+        "feature6": "Integraciones personalizadas",
+        "feature7": "Gestor de cuenta dedicado",
+        "cta": "Prueba Gratuita"
       },
       {
         "name": "Enterprise",
         "description": "Para grandes organizaciones con requisitos complejos.",
         "price": "$999",
-        "feature1": "Análisis empresarial integral",
-        "feature2": "Todo ilimitado",
-        "feature3": "Soporte dedicado 24/7",
-        "feature4": "Licencias de usuario ilimitadas",
-        "feature5": "Integraciones personalizadas",
-        "feature6": "Gerente de cuenta dedicado",
-        "cta": "Contactar ventas"
+        "feature1": "Miembros del equipo ilimitados",
+        "feature2": "Almacenamiento ilimitado",
+        "feature3": "Análisis personalizados",
+        "feature4": "Soporte VIP 24/7",
+        "feature5": "Acceso avanzado a la API",
+        "feature6": "Integraciones personalizadas",
+        "feature7": "Gestor de cuenta dedicado",
+        "feature8": "Capacitación en sitio",
+        "feature9": "Desarrollo a medida",
+        "cta": "Contactar a Ventas"
       }
     ]
   },
+  "cta": {
+    "title": "¿Listo para transformar tu negocio?",
+    "subtitle": "Únete a miles de empresas que ya utilizan Quantum para optimizar sus operaciones, aumentar la productividad y acelerar su crecimiento.",
+    "primaryCta": "Comenzar",
+    "secondaryCta": "Agendar una Demo",
+    "disclaimer": "No se requiere tarjeta de crédito. Prueba gratuita de 14 días. Cancela en cualquier momento."
+  },
   "contact": {
-    "title": "Contáctenos",
-    "subtitle": "¿Tiene preguntas o está listo para comenzar? Comuníquese con nuestro equipo hoy mismo.",
-    "formTitle": "Envíenos un mensaje",
-    "formSubtitle": "Nos pondremos en contacto con usted lo antes posible.",
+    "contact": "Contáctanos",
+    "title": "Ponte en contacto",
+    "subtitle": "¿Tienes preguntas o estás listo para comenzar? Comunícate con nuestro equipo hoy mismo.",
+    "formTitle": "Hablemos sobre cómo podemos ayudar a tu negocio",
+    "formSubtitle": "Nuestro equipo de expertos está listo para responder tus preguntas y ayudarte a encontrar la solución perfecta para las necesidades de tu negocio.",
+    "visit": "Visita nuestra oficina",
+    "email": "Envíanos un correo",
+    "call": "Llámanos",
+    "sendMessageTitle": "Envíanos un mensaje",
+    "sendMessageSubtitle": "Te responderemos lo antes posible.",
     "nameLabel": "Nombre",
-    "namePlaceholder": "Ingrese su nombre",
+    "namePlaceholder": "Ingresa tu nombre",
     "emailLabel": "Correo electrónico",
-    "emailPlaceholder": "Ingrese su correo electrónico",
+    "emailPlaceholder": "Ingresa tu correo electrónico",
     "subjectLabel": "Asunto",
-    "subjectPlaceholder": "¿De qué se trata esto?",
+    "subjectPlaceholder": "¿De qué se trata?",
     "messageLabel": "Mensaje",
-    "messagePlaceholder": "Cuéntenos con qué necesita ayuda...",
+    "messagePlaceholder": "Cuéntanos en qué necesitas ayuda...",
     "submit": "Enviar mensaje",
     "submitting": "Enviando...",
-    "errorMessage": "Algo salió mal. Por favor, inténtelo de nuevo.",
-    "successTitle": "Mensaje Enviado!",
-    "successMessage": "Gracias por contactarnos. Nos pondremos en contacto con usted en breve.",
-    "sendAnother": "Enviar otro mensaje",
-    "contactInfoTitle": "Información de contacto",
-    "contactInfoSubtitle": "También puede comunicarse con nosotros utilizando la información a continuación.",
-    "addressTitle": "Dirección",
-    "emailTitle": "Correo electrónico",
-    "phoneTitle": "Teléfono"
+    "errorMessage": "Algo salió mal. Por favor, inténtalo de nuevo.",
+    "successTitle": "¡Mensaje enviado!",
+    "successMessage": "Gracias por contactarnos. Te responderemos en breve.",
+    "sendAnother": "Enviar otro mensaje"
   },
   "footer": {
-    "tagline": "Ayudando a las empresas a crecer y tener éxito desde 2010.",
+    "subtitle": "Quantum ayuda a las empresas visionarias a transformarse, innovar y liderar en sus industrias. Nuestras soluciones de vanguardia impulsan el crecimiento y crean ventajas competitivas duraderas.",
     "company": "Empresa",
     "about": "Acerca de nosotros",
+    "team": "Nuestro equipo",
     "careers": "Carreras",
-    "blog": "Blog",
-    "legal": "Legal",
-    "terms": "Términos de servicio",
+    "contact": "Contacto",
+    "subscribe": "Suscríbete",
+    "subscribeDesc": "Mantente actualizado con nuestras últimas noticias y ofertas.",
+    "labelPlaceholder": "Ingresa tu correo",
+    "rights": "Todos los derechos reservados.",
     "privacy": "Política de privacidad",
-    "cookies": "Política de cookies",
-    "connect": "Conectar",
-    "rights": "Todos los derechos reservados."
+    "terms": "Términos de servicio",
+    "cookies": "Política de cookies"
   }
 }

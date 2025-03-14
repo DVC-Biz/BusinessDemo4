@@ -74,73 +74,106 @@
     "imageDesc1": "Revenue Growth",
     "imageDesc2": "User Satisfaction"
   },
+  "stats": {
+    "firstStat": "Enterprise Clients",
+    "secondStat": "Uptime Guarantee",
+    "thirdStat": "Users Worldwide",
+    "fourthStat": "Support Available"
+  },
   "testimonials": {
+    "testimonials": "Testimonials",
     "title": "What Our Clients Say",
     "subtitle": "Don't just take our word for it. Here's what our clients have to say about working with us.",
     "items": [
       {
-        "quote": "Working with BusinessPro has been a game-changer for our company. Their strategic insights helped us double our revenue in just 12 months.",
+        "quote": "Quantum has transformed the way we operate. The platform's intuitive design and powerful features have helped us streamline our processes and grow our business exponentially.",
         "author": "Sarah Johnson",
         "role": "CEO, TechStart Inc."
       },
       {
-        "quote": "The team at BusinessPro truly understands our industry and has provided invaluable guidance as we've scaled our operations globally.",
+        "quote": "The team at Quantum truly understands our industry and has provided invaluable guidance as we've scaled our operations globally. Their platform is a game-changer.",
         "author": "Michael Chen",
         "role": "COO, Global Solutions"
       },
       {
-        "quote": "I've worked with many consultants over the years, but none have delivered the level of results and ROI that BusinessPro has.",
+        "quote": "I've worked with many service providers over the years, but none have delivered the level of results and ROI that Quantum has. Their platform is exceptional.",
         "author": "Jessica Williams",
         "role": "Marketing Director, Retail Giant"
+      },
+      {
+        "quote": "Implementing Quantum's solution has been the best decision we've made this year. Our productivity has increased by 40% and our customer satisfaction scores are at an all-time high.",
+        "author": "David Rodriguez",
+        "role": "CTO, Innovation Labs"
       }
     ]
   },
   "pricing": {
+    "pricing": "Pricing",
     "title": "Simple, Transparent Pricing",
-    "subtitle": "Choose the plan that's right for your business. All plans include our core features.",
+    "subtitle": "Choose the plan that's right for your business. All plans include a 14-day free trial.",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "save": "Save",
     "popularLabel": "Most Popular",
-    "monthly": "month",
     "plans": [
       {
         "name": "Starter",
         "description": "Perfect for small businesses just getting started.",
-        "price": "$99",
-        "feature1": "Basic business analysis",
-        "feature2": "5 custom reports",
-        "feature3": "Email support",
-        "feature4": "1 user license",
+        "feature1": "Up to 5 team members",
+        "feature2": "20GB storage",
+        "feature3": "Basic analytics",
+        "feature4": "24/7 email support",
+        "feature5": "API access",
         "cta": "Get Started"
       },
       {
         "name": "Professional",
         "description": "Ideal for growing businesses with specific needs.",
         "price": "$299",
-        "feature1": "Advanced business analysis",
-        "feature2": "Unlimited custom reports",
-        "feature3": "Priority support",
-        "feature4": "5 user licenses",
+        "feature1": "Up to 20 team members",
+        "feature2": "100GB storage",
+        "feature3": "Advanced analytics",
+        "feature4": "24/7 priority support",
         "feature5": "API access",
+        "feature6": "Custom integrations",
+        "feature7": "Dedicated account manager",
         "cta": "Start Free Trial"
       },
       {
         "name": "Enterprise",
         "description": "For large organizations with complex requirements.",
         "price": "$999",
-        "feature1": "Comprehensive business analysis",
-        "feature2": "Unlimited everything",
-        "feature3": "24/7 dedicated support",
-        "feature4": "Unlimited user licenses",
-        "feature5": "Custom integrations",
-        "feature6": "Dedicated account manager",
+        "feature1": "Unlimited team members",
+        "feature2": "Unlimited storage",
+        "feature3": "Custom analytics",
+        "feature4": "24/7 VIP support",
+        "feature5": "Advanced API access",
+        "feature6": "Custom integrations",
+        "feature7": "Dedicated account manager",
+        "feature8": "On-site training",
+        "feature9": "Custom development",
         "cta": "Contact Sales"
       }
     ]
   },
+  "cta": {
+    "title": "Ready to transform your business?",
+    "subtitle": "Join thousands of businesses that are already using Quantum to streamline their operations, increase productivity, and drive growth.",
+    "primaryCta": "Get Started",
+    "secondaryCta": "Schedule a Demo",
+    "disclaimer": "No credit card required. 14-day free trial. Cancel anytime."
+  },
   "contact": {
+    "contact": "Contact us",
     "title": "Get in Touch",
     "subtitle": "Have questions or ready to get started? Reach out to our team today.",
-    "formTitle": "Send us a message",
-    "formSubtitle": "We'll get back to you as soon as possible.",
+    "formTitle": "Let's discuss how we can help your business",
+    "formSubtitle": "Our team of experts is ready to answer your questions and help you find the perfect solution for your business needs.",
+    "visit": "Visit our office",
+    "email": "Email us",
+    "call": "Call us",
+    "sendMessageTitle": "Send us a message",
+    "sendMessageSubtitle": "We'll get back to you as soon as possible.",
     "nameLabel": "Name",
     "namePlaceholder": "Enter your name",
     "emailLabel": "Email",
@@ -154,24 +187,21 @@
     "errorMessage": "Something went wrong. Please try again.",
     "successTitle": "Message Sent!",
     "successMessage": "Thank you for reaching out. We'll get back to you shortly.",
-    "sendAnother": "Send Another Message",
-    "contactInfoTitle": "Contact Information",
-    "contactInfoSubtitle": "You can also reach us using the information below.",
-    "addressTitle": "Address",
-    "emailTitle": "Email",
-    "phoneTitle": "Phone"
+    "sendAnother": "Send Another Message"
   },
   "footer": {
-    "tagline": "Helping businesses grow and succeed since 2010.",
+    "subtitle": "Quantum helps forward-thinking businesses transform, innovate, and lead in their industries. Our cutting-edge solutions drive growth and create lasting competitive advantages.",
     "company": "Company",
     "about": "About Us",
+    "team": "Our Team",
     "careers": "Careers",
-    "blog": "Blog",
-    "legal": "Legal",
-    "terms": "Terms of Service",
+    "contact": "Contact",
+    "subscribe": "Subscribe",
+    "subscribeDesc": "Stay updated with our latest news and offers.",
+    "labelPlaceholder": "Enter your email",
+    "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
-    "cookies": "Cookie Policy",
-    "connect": "Connect",
-    "rights": "All rights reserved."
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy"
   }
 }
