@@ -95,9 +95,9 @@ export default function Hero() {
           >
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-violet-500/20 z-10 pointer-events-none"></div>
             <img
-              src="/placeholder.svg?height=1080&width=1920"
+              src="/hero.png"
               alt="Quantum Dashboard"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <Button
@@ -120,13 +120,12 @@ export default function Hero() {
             <iframe
               width="100%"
               height="100%"
-              src="about:blank"
+              src="https://www.youtube.com/embed/b8sP7AS0CAY?si=3QG2V749rc3Rk2Wj"
               title="Product Demo"
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="border-0"
-            ></iframe>
+            />
           </div>
         </DialogContent>
       </Dialog>

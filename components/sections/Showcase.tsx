@@ -84,7 +84,7 @@ export default function Showcase() {
             <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-violet-500/20 rounded-xl blur-xl opacity-50 -z-10"></div>
             <div className="relative rounded-xl overflow-hidden border border-primary/20 shadow-2xl shadow-primary/10">
               <Image
-                src="/placeholder.svg?height=600&width=600"
+                src="/hero.png"
                 width={600}
                 height={600}
                 alt="Platform Dashboard"
